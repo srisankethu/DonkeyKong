@@ -1,2 +1,3 @@
 # DonkeyKong
-DonkeyKong in pygame
+
+Implementation of DonkeyKong in pygame

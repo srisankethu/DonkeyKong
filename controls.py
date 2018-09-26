@@ -2,7 +2,7 @@ import pygame
 import time
 from pygame.locals import *
 pygame.init()
-beep=pygame.mixer.Sound('pickup.wav')
+beep=pygame.mixer.Sound('sounds/pickup.wav')
 def control(event,px,py,pc):
 	if event.type==QUIT:
 		time.sleep(1)

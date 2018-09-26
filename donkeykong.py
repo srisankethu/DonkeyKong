@@ -124,7 +124,7 @@ class board:
 		clock=pygame.time.Clock()
 		count_ms=0
 		# BEEP Sound
-		beep=pygame.mixer.Sound('pickup.wav')
+		beep=pygame.mixer.Sound('sounds/pickup.wav')
 		while True:
 			for event in pygame.event.get():
 				if event.type==QUIT:
@@ -346,7 +346,7 @@ class board:
 		background_color=colors.red
 		caption='Donkey Kong'
 		border=layout.s_layout(display_width,display_height,background_color,caption)
-		pygame.mixer.music.load('gameover.wav')
+		pygame.mixer.music.load('sounds/gameover.wav')
 		pygame.mixer.music.play(0,0.0)
 		surf,rect=message.message_to_screen('Your Score',colors.green,display_width,display_height,-20,-100,"large")
 		border.blit(surf,rect)
